@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+
+/* リセット */
+* { margin: 0; padding: 0; }
+
+a { text-decoration: none; }
+ul, ol { list-style: none; }
+img { vertical-align: middle; }
+textarea { resize: vertical; }
+
+/* フルードイメージ */
+img { max-width: 100%; }
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding-top: 5em;
+}
