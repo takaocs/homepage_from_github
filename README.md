@@ -61,7 +61,40 @@ GitHubからリポジトリを作成。
 
 ### 手順3: 「navigation」ブランチを作成し、GitHubにpushする
 
-次に「navigation」ブランチを作成し、GitHubにpushする。
+次に「develop」ブランチから「navigation」ブランチを作成し、GitHubにpushする。
 
     git checkout -b navigation
     git push -u origin navigation
+
+GitHubのページで「navigation」ブランチができていることを確認する。
+
+
+### 手順4: ナビゲーションバーの作成、リポジトリに登録
+
+今回はBootstrapを使って作成。
+
+作成後は「**git add**」「**git commit**」コマンドを使ってリポジトリに登録。
+
+    git add .
+    git commit -m "ナビゲーションバーを作成しました"
+
+そして、忘れてはいけないのがGitHubにpushする事。
+
+    git push
+
+【補足】  
+今回は簡単な作業だったので、「git add」「git commit」「git push」は各1回のみの実行だったが、本来の作業では何度も実行することになる。
+
+
+### 手順5: マージする
+
+まずは「develop」ブランチにチェックアウトし、「**git merge**」コマンドを実行。
+
+    git checkout develop
+    git merge --no-ff navigation
+
+最後は、GitHubにpush。
+
+    git push
+
+GitHubのページで確認する。
