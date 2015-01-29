@@ -20,3 +20,14 @@ html, body {
 body {
 	padding-top: 5em;
 }
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -5em;
+}
+
+#push {
+	height: 10em;
+}
