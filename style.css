@@ -28,6 +28,14 @@ body {
 	margin: 0 auto -5em;
 }
 
+
+/* フッター */
 #push {
 	height: 10em;
+}
+
+#footer {
+	height: 5em;
+	border-top: 1px solid #c0c0c0;
+	padding-top: 1em; 
 }
